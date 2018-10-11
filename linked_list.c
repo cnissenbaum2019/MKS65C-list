@@ -1,6 +1,11 @@
 #include "linked_list.h"
 int main()
 {
+	
+	print_list(NULL);
+
+	printf("\n");
+
 	struct node n0;
 
 	n0.next = NULL;
@@ -26,7 +31,7 @@ int main()
 
 	printf("\n");
 
-	free_list(x);
+	x = free_list(x);
 
 	print_list(x);
 

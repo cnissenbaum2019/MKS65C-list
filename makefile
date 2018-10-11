@@ -8,3 +8,4 @@ run: a.out linked_list.c
 clean: a.out linked_list.h.gch
 	rm a.out
 	rm linked_list.h.gch
+	

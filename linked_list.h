@@ -25,8 +25,6 @@ struct node * insert_front(struct node * start , int new_cargo) {
 
 struct node * free_list(struct node * n) {
 
-	struct node * start = n;
-
 	struct node * placeholder = n;
 
 	while (n) {
@@ -36,8 +34,6 @@ struct node * free_list(struct node * n) {
 		n = placeholder;
 	}
 
-	free(start);
-
-	return start;
+	return n;
 
 }
